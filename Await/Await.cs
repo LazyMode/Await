@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Threading.Tasks;
-using System.Runtime.CompilerServices;
 
-#if !Async40
+#if NET45 || NativeAwait || !(NET40 || LegacyAwait || CompatibleAwait)
+using System.Runtime.CompilerServices;
 using TaskEx = System.Threading.Tasks.Task;
+#else
+using Microsoft.Runtime.CompilerServices;
+using TaskEx = System.Threading.Tasks.TaskEx;
 #endif
 
 public static class Await
