@@ -9,7 +9,7 @@ using Microsoft.Runtime.CompilerServices;
 using TaskEx = System.Threading.Tasks.TaskEx;
 #endif
 
-public static class Await
+static partial class Await
 {
     public static TaskAwaiter GetAwaiter(this int ms)
         => TaskEx.Delay(ms).GetAwaiter();
