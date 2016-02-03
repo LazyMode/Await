@@ -10,5 +10,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Await.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WaitHandle.cs" />
   </ItemGroup>
 </Project>
