@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>Await-Lib</id>
+        <version>0.2</version>
+        <authors>Licshee</authors>
+        <projectUrl>https://github.com/NanaLich/Await</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>You just AWAIT</description>
+    </metadata>
+    <files>
+        <file src="Await.P259\Release\Await.dll" target="lib\portable-net45+netcore45+wpa81+wp8\Await.dll" />
+        <file src="Await.P328\Release\Await.dll" target="lib\Await.dll" />
+    </files>
+</package>
