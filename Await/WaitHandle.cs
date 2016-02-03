@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Threading;
-using System.Threading.Tasks;
 
 #if TaskEx
 using Microsoft.Runtime.CompilerServices;
@@ -12,6 +11,6 @@ using static System.Threading.Tasks.Task;
 
 static partial class Await
 {
-    public static TaskAwaiter GetAwaiter(this WaitHandle handle)
-        => Run(handle.WaitOne).GetAwaiter();
+    public static TaskAwaiter<bool> GetAwaiter(this WaitHandle handle)
+        => Run((Func<bool>)handle.WaitOne).GetAwaiter();
 }

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading.Tasks;
 
 #if TaskEx
 using Microsoft.Runtime.CompilerServices;
