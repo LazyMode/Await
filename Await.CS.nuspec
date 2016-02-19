@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Await.CS</id>
-    <version>0.3</version>
+    <version>0.3.1</version>
     <authors>Licshee</authors>
     <projectUrl>https://github.com/OmniKits/Await</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
